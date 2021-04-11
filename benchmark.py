@@ -30,41 +30,41 @@ def test ():
     """Test function"""
     if COUNTER == 1:
         quick_sort(RANDOM_LIST, 0, MAX)
-        print("LISTA ALEATORIA: ", end = '')
+        print("LISTA ALEATORIA: ", end='')
     if COUNTER == 2:
         quick_sort(GROWING_LIST, 0, MAX)
-        print("LISTA CRESCENTE: ", end = '')
+        print("LISTA CRESCENTE: ", end='')
     if COUNTER == 3:
         quick_sort(DECREASING_LIST, 0, MAX)
-        print("LISTA DECRESCENTE: ", end = '')
+        print("LISTA DECRESCENTE: ", end='')
     if COUNTER == 4:
-        print("LISTA IDENTICA: ", end = '')
+        print("LISTA IDENTICA: ", end='')
         quick_sort(EQUAL_LIST, 0, MAX)
 
     if COUNTER == 5:
         quick_sort_m3(RANDOM_LIST2, 0, MAX)
-        print("LISTA ALEATORIA: ", end = '')
+        print("LISTA ALEATORIA: ", end='')
     if COUNTER == 6:
         quick_sort_m3(GROWING_LIST2, 0, MAX)
-        print("LISTA CRESCENTE: ", end = '')
+        print("LISTA CRESCENTE: ", end='')
     if COUNTER == 7:
         quick_sort_m3(DECREASING_LIST2, 0, MAX)
-        print("LISTA DECRESCENTE: ", end = '')
+        print("LISTA DECRESCENTE: ", end='')
     if COUNTER == 8:
-        print("LISTA IDENTICA: ", end = '')
+        print("LISTA IDENTICA: ", end='')
         quick_sort_m3(EQUAL_LIST2, 0, MAX)
 
     if COUNTER == 9:
-        print("Torre com 20 discos: ", end = '')
+        print("Torre com 20 discos: ", end='')
         hanoi_tower(20, 1, 2, 3)
     if COUNTER == 10:
-        print("Torre com 25 discos: ", end = '')
+        print("Torre com 25 discos: ", end='')
         hanoi_tower(25, 1, 2, 3)
     if COUNTER == 11:
-        print("Torre com 26 discos: ", end = '')
+        print("Torre com 26 discos: ", end='')
         hanoi_tower(26, 1, 2, 3)
     if COUNTER == 12:
-        print("Torre com 27 discos: ", end = '')
+        print("Torre com 27 discos: ", end='')
         hanoi_tower(27, 1, 2, 3)
         
 
