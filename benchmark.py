@@ -10,6 +10,7 @@ from tower_of_hanoi import hanoi_tower
 from list_gen import random_generator, descending_generator, ascending_generator, equal_generator
 from quick_sort_med3 import quick_sort_m3
 from binary_search import binary_search
+from merge_sort import merge_sort
 
 import random
 import timeit
@@ -63,6 +64,18 @@ if __name__ == "__main__":
     COMMAND_LIST.append('quick_sort(EQUAL_LIST, 0, MAX)')
     PRINT_LIST.append("LISTA IDENTICA: ")
 
+    COMMAND_LIST.append('merge_sort(RANDOM_LIST, 0, MAX)')
+    PRINT_LIST.append("LISTA ALEATORIA: ")
+
+    COMMAND_LIST.append('merge_sort(GROWING_LIST, 0, MAX)')
+    PRINT_LIST.append("LISTA CRESCENTE: ")
+
+    COMMAND_LIST.append('merge_sort(DECREASING_LIST, 0, MAX)')
+    PRINT_LIST.append("LISTA DECRESCENTE: ")
+
+    COMMAND_LIST.append('merge_sort(EQUAL_LIST, 0, MAX)')
+    PRINT_LIST.append("LISTA IDENTICA: ")
+
     COMMAND_LIST.append('quick_sort_m3(RANDOM_LIST2, 0, MAX)')
     PRINT_LIST.append("LISTA ALEATORIA: ")
 
@@ -85,6 +98,18 @@ if __name__ == "__main__":
     PRINT_LIST.append("LISTA DECRESCENTE: ")
 
     COMMAND_LIST.append('quick_sort(EQUAL_LIST3, 0, MAX2)')
+    PRINT_LIST.append("LISTA IDENTICA: ")
+
+    COMMAND_LIST.append('merge_sort(RANDOM_LIST3, 0, MAX2)')
+    PRINT_LIST.append("LISTA ALEATORIA: ")
+
+    COMMAND_LIST.append('merge_sort(GROWING_LIST3, 0, MAX2)')
+    PRINT_LIST.append("LISTA CRESCENTE: ")
+
+    COMMAND_LIST.append('merge_sort(DECREASING_LIST3, 0, MAX2)')
+    PRINT_LIST.append("LISTA DECRESCENTE: ")
+
+    COMMAND_LIST.append('merge_sort(EQUAL_LIST3, 0, MAX2)')
     PRINT_LIST.append("LISTA IDENTICA: ")
 
     COMMAND_LIST.append('quick_sort_m3(RANDOM_LIST4, 0, MAX2)')
@@ -112,27 +137,39 @@ if __name__ == "__main__":
     PRINT_LIST.append("Torre com 27 discos: ")
 
     COMMAND_LIST.append('binary_search(RANDOM_LIST, 0, MAX, 5)')
-    PRINT_LIST.append("(5000 elementos): ")
+    PRINT_LIST.append("(5000 elementos - valor existente): ")
 
     COMMAND_LIST.append('binary_search(RANDOM_LIST4, 0, MAX2, 5)')
-    PRINT_LIST.append("(10000 elementos): ")
+    PRINT_LIST.append("(10000 elementos - valor existente): ")
+
+    COMMAND_LIST.append('binary_search(GROWING_LIST, 0, MAX, MAX+2)')
+    PRINT_LIST.append("(5000 elementos - valor inexistente): ")
+
+    COMMAND_LIST.append('binary_search(GROWING_LIST, 0, MAX2, -1)')
+    PRINT_LIST.append("(10000 elementos - valor inexistente): ")
 
     for i in range(len(COMMAND_LIST)):
         if COUNTER == -1:
             print("Quick Sort: (5000 elementos)")
         if COUNTER == 3:
             print("")
-            print("Quick Sort Mediana de 3: (5000 elementos)")
+            print("Merge Sort: (5000 elementos)")
         if COUNTER == 7:
             print("")
-            print("Quick Sort: (10000 elementos)")
+            print("Quick Sort Mediana de 3: (5000 elementos)")
         if COUNTER == 11:
             print("")
-            print("Quick Sort Mediana de 3: (10000 elementos)")
+            print("Quick Sort: (10000 elementos)")
         if COUNTER == 15:
             print("")
-            print("Torre de Hanoi:")
+            print("Merge Sort: (10000 elementos)")
         if COUNTER == 19:
+            print("")
+            print("Quick Sort Mediana de 3: (10000 elementos)")
+        if COUNTER == 23:
+            print("")
+            print("Torre de Hanoi:")
+        if COUNTER == 27:
             print("")
             print("Busca Binaria:")
 
