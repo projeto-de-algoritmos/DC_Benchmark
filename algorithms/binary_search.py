@@ -10,7 +10,7 @@ def binary_search(arr, start, end, x):
             x is in arr: index of x
             else: -1
     """
-    if start > end:
+    if end < start:
         return -1
 
     mid = (start + end) // 2
@@ -18,7 +18,6 @@ def binary_search(arr, start, end, x):
     if x == arr[mid]:
         return mid
     elif x < arr[mid]:
-        return binary_search(arr, start, mid, x)
+        return binary_search(arr, start, mid-1, x)
     else:
-        return binary_search(arr, mid, end, x)
-
+        return binary_search(arr, mid+1, end, x)

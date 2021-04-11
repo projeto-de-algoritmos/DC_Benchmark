@@ -1,3 +1,10 @@
+import sys
+# Add new folders
+sys.path.insert(1, './algorithms')
+sys.path.insert(2, './tests')
+# Max recursion limit (default: 1000)
+sys.setrecursionlimit(100000)
+
 from quick_sort import quick_sort
 from tower_of_hanoi import hanoi_tower
 from list_gen import random_generator, descending_generator, ascending_generator, equal_generator
@@ -5,10 +12,6 @@ from quick_sort_med3 import quick_sort_m3
 
 import random
 import timeit
-
-# Max recursion limit (default: 1000)
-import sys
-sys.setrecursionlimit(100000)
 
 MAX = 5000
 COUNTER = 0
@@ -67,13 +70,13 @@ def test ():
 
 if __name__ == "__main__":
 
-    print("Quick_sort:")
+    print("Quick Sort:")
     for i in range(4):
         COUNTER = COUNTER + 1
         print(timeit.timeit("test()", setup="from __main__ import test",number = 1))
 
     print("")
-    print("Quick_sort_m3:")
+    print("Quick Sort com medianas de 3:")
     for i in range(4):
         COUNTER = COUNTER + 1
         print(timeit.timeit("test()", setup="from __main__ import test",number = 1))

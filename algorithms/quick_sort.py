@@ -56,7 +56,7 @@ def partition(numbers: list, l: int, r: int) -> int:
 
 def quick_sort(numbers: list, l:int , r: int) -> None:
     """Divide and Conquer sort algorithm. Partition
-    elements until
+    elements until smallest arrays.
 
             Parameters:
                     numbers (list): the main list
