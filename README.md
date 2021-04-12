@@ -19,12 +19,11 @@ linguagem para evitar discrepâncias de performance enviesadas.
 
 ## Screenshots
 
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![screenshot](https://user-images.githubusercontent.com/78360676/114326149-b9d9c600-9b09-11eb-87ae-495a5ff522d2.png)
 
 ## Instalação 
 
 **Linguagem**: Python3<br>
-**Framework**: (caso exista)<br>
 **Ferramentas**: Docker, docker-compose<br>
 
 É necessário ter um computador com docker instalado, tudo será virtualizado. Com
@@ -46,15 +45,15 @@ Na primeira vez é necessário realizar o build, isso pode ser feito executando:
 $ docker-compose up --build
 ```
 
-Com a execução desse comando será gerado uma imagem com o nome de `pycallgraph.png`.
-Abra ela para visualizar o grafo de chamadas. Para abrir pelo terminal basta
-executar:
+Com a execução desse comando será mostrado no terminal os algoritmos com o seus
+respectivos tempos
+
+## Uso alternativo
+
+Para utilizar o programa desta forma é necessário apenas o python3. Com o python3
+instalado utilize o comando abaixo no diretorio do projeto:
 
 ```
-$ xdg-open pycallgraph.png 
+$ python3 benchmark.py
 ```
-
-## Outros 
-
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
